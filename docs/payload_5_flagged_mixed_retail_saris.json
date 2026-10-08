@@ -1,0 +1,289 @@
+{
+  "_scenario": "DELIBERATELY FLAGGED — Oil + beer + red onion, Saris. GPS drift (~230m off outlet), price outlier (4,300 ETB vs 400-460 market range), impossibly fast 14s survey, and a red onion photo captured 6 days before submission (stale/reused-photo signal). Expect geofence_check, possible_wrong_location, poor_gps_accuracy, timestamp_consistency (x2), and price_range_outlier flags.",
+  "submission_id": "b1a1c005-5555-4a55-9a55-000000000005",
+  "quest_id": "QST-MIXEDRETAIL-SARIS-004",
+  "config_version": "QST-MIXEDRETAIL-SARIS-004_v1",
+  "agent_id": "AGT-30099",
+  "outlet_id": "OUT-SARIS-GROCERY-004",
+  "timestamps": {
+    "survey_start_at": "2026-07-24T13:40:00+03:00",
+    "survey_end_at": "2026-07-24T13:40:14+03:00",
+    "submitted_at": "2026-07-24T13:40:21+03:00"
+  },
+  "gps": {
+    "lat": 8.9571,
+    "lng": 38.7665,
+    "accuracy_m": 14
+  },
+  "answers": [
+    {
+      "question_id": "branch_select",
+      "input_type": "dropdown",
+      "value": "OUT-SARIS-GROCERY-004"
+    },
+    {
+      "question_id": "confirm_branch",
+      "input_type": "single_choice",
+      "value": "Yes"
+    },
+    {
+      "question_id": "oil_rows",
+      "input_type": "repeat_table",
+      "value": [
+        {
+          "row_id": "tena_1l",
+          "brand": "Tena",
+          "pack_size": "1L",
+          "available": true
+        }
+      ]
+    },
+    {
+      "question_id": "oil_brand",
+      "input_type": "single_choice",
+      "row_id": "tena_1l",
+      "value": "Tena"
+    },
+    {
+      "question_id": "oil_pack_size",
+      "input_type": "single_choice",
+      "row_id": "tena_1l",
+      "value": "1L"
+    },
+    {
+      "question_id": "oil_available",
+      "input_type": "single_choice",
+      "row_id": "tena_1l",
+      "value": "Yes"
+    },
+    {
+      "question_id": "oil_price",
+      "input_type": "numeric_price",
+      "row_id": "tena_1l",
+      "value": 4300,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "oil_stock_status",
+      "input_type": "single_choice",
+      "row_id": "tena_1l",
+      "value": "Normal"
+    },
+    {
+      "question_id": "oil_price_photo",
+      "input_type": "photo",
+      "row_id": "tena_1l",
+      "media_ref": "media_001"
+    },
+    {
+      "question_id": "oil_shelf_visibility",
+      "input_type": "single_choice",
+      "value": "Poor"
+    },
+    {
+      "question_id": "oil_shelf_photo",
+      "input_type": "photo",
+      "media_ref": "media_002"
+    },
+    {
+      "question_id": "beer_rows",
+      "input_type": "repeat_table",
+      "value": [
+        {
+          "row_id": "dashen",
+          "brand": "Dashen",
+          "pack_size": "330ml bottle",
+          "available": true
+        }
+      ]
+    },
+    {
+      "question_id": "beer_brand",
+      "input_type": "single_choice",
+      "row_id": "dashen",
+      "value": "Dashen"
+    },
+    {
+      "question_id": "beer_sku",
+      "input_type": "text",
+      "row_id": "dashen",
+      "value": "330ml bottle"
+    },
+    {
+      "question_id": "beer_available",
+      "input_type": "single_choice",
+      "row_id": "dashen",
+      "value": "Yes"
+    },
+    {
+      "question_id": "beer_price",
+      "input_type": "numeric_price",
+      "row_id": "dashen",
+      "value": 60,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "beer_cold_availability",
+      "input_type": "single_choice",
+      "row_id": "dashen",
+      "value": "Not cold"
+    },
+    {
+      "question_id": "beer_visibility",
+      "input_type": "single_choice",
+      "row_id": "dashen",
+      "value": "Shelf visible"
+    },
+    {
+      "question_id": "beer_photo",
+      "input_type": "photo",
+      "row_id": "dashen",
+      "media_ref": "media_003"
+    },
+    {
+      "question_id": "beer_photo_not_allowed",
+      "input_type": "single_choice",
+      "value": "No"
+    },
+    {
+      "question_id": "onion_rows",
+      "input_type": "repeat_table",
+      "value": [
+        {
+          "row_id": "unknown_onion",
+          "pack_size": "Unknown origin red onion",
+          "available": true
+        }
+      ]
+    },
+    {
+      "question_id": "onion_origin",
+      "input_type": "single_choice",
+      "row_id": "unknown_onion",
+      "value": "Unknown origin"
+    },
+    {
+      "question_id": "onion_available",
+      "input_type": "single_choice",
+      "row_id": "unknown_onion",
+      "value": "Yes"
+    },
+    {
+      "question_id": "onion_price",
+      "input_type": "numeric_price",
+      "row_id": "unknown_onion",
+      "value": 78,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "onion_unit",
+      "input_type": "single_choice",
+      "row_id": "unknown_onion",
+      "value": "kg"
+    },
+    {
+      "question_id": "onion_size_quality",
+      "input_type": "single_choice",
+      "row_id": "unknown_onion",
+      "value": "Small"
+    },
+    {
+      "question_id": "onion_price_type",
+      "input_type": "single_choice",
+      "value": "Retail"
+    },
+    {
+      "question_id": "onion_photo",
+      "input_type": "photo",
+      "row_id": "unknown_onion",
+      "media_ref": "media_004"
+    },
+    {
+      "question_id": "onion_trader_note",
+      "input_type": "text",
+      "value": ""
+    },
+    {
+      "question_id": "confirm",
+      "input_type": "checkbox",
+      "value": true
+    }
+  ],
+  "media": [
+    {
+      "media_ref": "media_001",
+      "question_id": "oil_price_photo",
+      "row_id": "tena_1l",
+      "media_type": "image",
+      "file_ref": "seed-products/oil-bottle-sunflower-1l.jpg",
+      "captured_at": "2026-07-24T13:40:05+03:00",
+      "gps_at_capture": {
+        "lat": 8.95711,
+        "lng": 38.76649
+      }
+    },
+    {
+      "media_ref": "media_002",
+      "question_id": "oil_shelf_photo",
+      "media_type": "image",
+      "file_ref": "seed-products/supermarket-shelf.jpg",
+      "captured_at": "2026-07-24T13:40:07+03:00",
+      "gps_at_capture": {
+        "lat": 8.9571,
+        "lng": 38.7665
+      }
+    },
+    {
+      "media_ref": "media_003",
+      "question_id": "beer_photo",
+      "row_id": "dashen",
+      "media_type": "image",
+      "file_ref": "seed-products/beer-bottles-shelf.jpg",
+      "captured_at": "2026-07-24T13:40:09+03:00",
+      "gps_at_capture": {
+        "lat": 8.95709,
+        "lng": 38.76651
+      }
+    },
+    {
+      "media_ref": "media_004",
+      "question_id": "onion_photo",
+      "row_id": "unknown_onion",
+      "media_type": "image",
+      "file_ref": "seed-products/red-onion-pile-market.jpg",
+      "captured_at": "2026-07-18T09:00:00+03:00",
+      "gps_at_capture": {
+        "lat": 8.9605,
+        "lng": 38.772
+      }
+    }
+  ],
+  "prices": [
+    {
+      "question_id": "oil_price",
+      "sku_id": "SKU-OIL-TENA-1L",
+      "row_id": "tena_1l",
+      "value": 4300,
+      "currency": "ETB",
+      "unit": "per bottle",
+      "market_range_price": "400-460"
+    },
+    {
+      "question_id": "beer_price",
+      "sku_id": "SKU-BEER-DASHEN-330ML",
+      "row_id": "dashen",
+      "value": 60,
+      "currency": "ETB",
+      "unit": "per bottle"
+    },
+    {
+      "question_id": "onion_price",
+      "sku_id": "SKU-ONION-UNKNOWN-KG",
+      "row_id": "unknown_onion",
+      "value": 78,
+      "currency": "ETB",
+      "unit": "per kg"
+    }
+  ],
+  "client_app_version": "2.5.0"
+}

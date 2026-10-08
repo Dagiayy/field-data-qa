@@ -1,0 +1,11 @@
+.env
+.git
+node_modules
+storage/logs/*.log
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/views/*
+# Runtime-created symlink (php artisan storage:link, run by
+# docker-entrypoint.sh) — regenerated on container start, and including it
+# in the build context breaks on Windows hosts ("invalid file request").
+public/storage

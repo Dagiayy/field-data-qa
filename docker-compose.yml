@@ -1,0 +1,100 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_DATABASE:-metrix}
+      POSTGRES_USER: ${DB_USERNAME:-metrix}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-metrix}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USERNAME:-metrix} -d ${DB_DATABASE:-metrix}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend:/var/www/html
+      - backend_vendor:/var/www/html/vendor
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      default:
+        aliases:
+          - backend
+
+  # Dedicated test runner — NEVER run `php artisan test` against the
+  # `backend` service directly. Its env_file (backend/.env) points at the
+  # real Postgres database, and phpdotenv loads env vars as immutable: once
+  # Docker has set DB_CONNECTION=pgsql at the OS level, nothing inside PHP
+  # (not phpunit.xml's <env>, not .env.testing) can override it, so
+  # RefreshDatabase-based tests would silently drop and rebuild every table
+  # on the REAL database. The `environment:` block below is set at the
+  # container level (before PHP starts), which is the only thing that
+  # actually wins over env_file — that's what keeps this safe. Run tests
+  # with: docker compose run --rm --no-deps backend-test php artisan test
+  backend-test:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    profiles: ["test"]
+    env_file:
+      - ./backend/.env
+    environment:
+      APP_ENV: testing
+      DB_CONNECTION: sqlite
+      DB_DATABASE: ":memory:"
+      CACHE_STORE: array
+      SESSION_DRIVER: array
+      QUEUE_CONNECTION: sync
+      BROADCAST_CONNECTION: log
+    volumes:
+      - ./backend:/var/www/html
+      - backend_vendor:/var/www/html/vendor
+    networks:
+      default: {}
+
+  image-service:
+    build:
+      context: ./image-service
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    networks:
+      default:
+        aliases:
+          - image-service
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file:
+      - ./frontend/.env
+    volumes:
+      - ./frontend:/app
+      - frontend_node_modules:/app/node_modules
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
+  backend_vendor:
+  frontend_node_modules:

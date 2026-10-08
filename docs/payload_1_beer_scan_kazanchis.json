@@ -1,0 +1,125 @@
+{
+  "_scenario": "SAMPLE / CLEAN — Single-brand beer availability check, Kazanchis. Photo deliberately matched to the outlet baseline. Expected: only the informational no_duration_baseline_configured flag.",
+  "submission_id": "b1a1c001-1111-4a11-9a11-000000000001",
+  "quest_id": "QST-BEERSCAN-KAZANCHIS-006",
+  "config_version": "QST-BEERSCAN-KAZANCHIS-006_v1",
+  "agent_id": "AGT-30061",
+  "outlet_id": "OUT-KAZANCHIS-BEER-006",
+  "timestamps": {
+    "survey_start_at": "2026-07-24T16:10:00+03:00",
+    "survey_end_at": "2026-07-24T16:14:30+03:00",
+    "submitted_at": "2026-07-24T16:14:42+03:00"
+  },
+  "gps": {
+    "lat": 9.01502,
+    "lng": 38.76498,
+    "accuracy_m": 4
+  },
+  "answers": [
+    {
+      "question_id": "branch_select",
+      "input_type": "dropdown",
+      "value": "OUT-KAZANCHIS-BEER-006"
+    },
+    {
+      "question_id": "confirm_branch",
+      "input_type": "single_choice",
+      "value": "Yes"
+    },
+    {
+      "question_id": "beer_rows",
+      "input_type": "repeat_table",
+      "value": [
+        {
+          "row_id": "st_george",
+          "brand": "St. George",
+          "pack_size": "330ml bottle",
+          "available": true
+        }
+      ]
+    },
+    {
+      "question_id": "beer_brand",
+      "input_type": "single_choice",
+      "row_id": "st_george",
+      "value": "St. George"
+    },
+    {
+      "question_id": "beer_sku",
+      "input_type": "text",
+      "row_id": "st_george",
+      "value": "330ml bottle"
+    },
+    {
+      "question_id": "beer_available",
+      "input_type": "single_choice",
+      "row_id": "st_george",
+      "value": "Yes"
+    },
+    {
+      "question_id": "beer_price",
+      "input_type": "numeric_price",
+      "row_id": "st_george",
+      "value": 68,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "beer_cold_availability",
+      "input_type": "single_choice",
+      "row_id": "st_george",
+      "value": "Cold"
+    },
+    {
+      "question_id": "beer_visibility",
+      "input_type": "single_choice",
+      "row_id": "st_george",
+      "value": "Fridge visible"
+    },
+    {
+      "question_id": "beer_competing_visible",
+      "input_type": "single_choice",
+      "value": "Yes"
+    },
+    {
+      "question_id": "beer_photo",
+      "input_type": "photo",
+      "row_id": "st_george",
+      "media_ref": "media_001"
+    },
+    {
+      "question_id": "beer_photo_not_allowed",
+      "input_type": "single_choice",
+      "value": "No"
+    },
+    {
+      "question_id": "confirm",
+      "input_type": "checkbox",
+      "value": true
+    }
+  ],
+  "media": [
+    {
+      "media_ref": "media_001",
+      "question_id": "beer_photo",
+      "row_id": "st_george",
+      "media_type": "image",
+      "file_ref": "seed-products/beer-bottle-330ml.jpg",
+      "captured_at": "2026-07-24T16:12:30+03:00",
+      "gps_at_capture": {
+        "lat": 9.01499,
+        "lng": 38.76499
+      }
+    }
+  ],
+  "prices": [
+    {
+      "question_id": "beer_price",
+      "sku_id": "SKU-BEER-STGEORGE-330ML",
+      "row_id": "st_george",
+      "value": 68,
+      "currency": "ETB",
+      "unit": "per bottle"
+    }
+  ],
+  "client_app_version": "2.5.0"
+}

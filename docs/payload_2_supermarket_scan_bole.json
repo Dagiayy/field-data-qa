@@ -1,0 +1,415 @@
+{
+  "_scenario": "COMPLEX — 3 edible-oil brand/pack rows + 2 beer brand rows, Bole supermarket. Submission-level data (price/GPS/timing) is clean; real photos may still soft-flag on photo-quality/baseline-similarity.",
+  "submission_id": "b1a1c002-2222-4a22-9a22-000000000002",
+  "quest_id": "QST-SUPERMARKET-BOLE-001",
+  "config_version": "QST-SUPERMARKET-BOLE-001_v1",
+  "agent_id": "AGT-30012",
+  "outlet_id": "OUT-BOLE-SUPERMARKET-001",
+  "timestamps": {
+    "survey_start_at": "2026-07-24T10:05:00+03:00",
+    "survey_end_at": "2026-07-24T10:22:40+03:00",
+    "submitted_at": "2026-07-24T10:22:55+03:00"
+  },
+  "gps": {
+    "lat": 8.99502,
+    "lng": 38.79002,
+    "accuracy_m": 5
+  },
+  "answers": [
+    {
+      "question_id": "branch_select",
+      "input_type": "dropdown",
+      "value": "OUT-BOLE-SUPERMARKET-001"
+    },
+    {
+      "question_id": "confirm_branch",
+      "input_type": "single_choice",
+      "value": "Yes"
+    },
+    {
+      "question_id": "oil_rows",
+      "input_type": "repeat_table",
+      "value": [
+        {
+          "row_id": "orkid_1l",
+          "brand": "Orkid",
+          "pack_size": "1L",
+          "available": true
+        },
+        {
+          "row_id": "tena_3l",
+          "brand": "Tena",
+          "pack_size": "3L",
+          "available": true
+        },
+        {
+          "row_id": "omar_5l",
+          "brand": "Omar",
+          "pack_size": "5L",
+          "available": true
+        }
+      ]
+    },
+    {
+      "question_id": "oil_brand",
+      "input_type": "single_choice",
+      "row_id": "orkid_1l",
+      "value": "Orkid"
+    },
+    {
+      "question_id": "oil_pack_size",
+      "input_type": "single_choice",
+      "row_id": "orkid_1l",
+      "value": "1L"
+    },
+    {
+      "question_id": "oil_available",
+      "input_type": "single_choice",
+      "row_id": "orkid_1l",
+      "value": "Yes"
+    },
+    {
+      "question_id": "oil_price",
+      "input_type": "numeric_price",
+      "row_id": "orkid_1l",
+      "value": 430,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "oil_stock_status",
+      "input_type": "single_choice",
+      "row_id": "orkid_1l",
+      "value": "Normal"
+    },
+    {
+      "question_id": "oil_price_photo",
+      "input_type": "photo",
+      "row_id": "orkid_1l",
+      "media_ref": "media_001"
+    },
+    {
+      "question_id": "oil_brand",
+      "input_type": "single_choice",
+      "row_id": "tena_3l",
+      "value": "Tena"
+    },
+    {
+      "question_id": "oil_pack_size",
+      "input_type": "single_choice",
+      "row_id": "tena_3l",
+      "value": "3L"
+    },
+    {
+      "question_id": "oil_available",
+      "input_type": "single_choice",
+      "row_id": "tena_3l",
+      "value": "Yes"
+    },
+    {
+      "question_id": "oil_price",
+      "input_type": "numeric_price",
+      "row_id": "tena_3l",
+      "value": 1200,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "oil_stock_status",
+      "input_type": "single_choice",
+      "row_id": "tena_3l",
+      "value": "Low"
+    },
+    {
+      "question_id": "oil_price_photo",
+      "input_type": "photo",
+      "row_id": "tena_3l",
+      "media_ref": "media_002"
+    },
+    {
+      "question_id": "oil_brand",
+      "input_type": "single_choice",
+      "row_id": "omar_5l",
+      "value": "Omar"
+    },
+    {
+      "question_id": "oil_pack_size",
+      "input_type": "single_choice",
+      "row_id": "omar_5l",
+      "value": "5L"
+    },
+    {
+      "question_id": "oil_available",
+      "input_type": "single_choice",
+      "row_id": "omar_5l",
+      "value": "Yes"
+    },
+    {
+      "question_id": "oil_price",
+      "input_type": "numeric_price",
+      "row_id": "omar_5l",
+      "value": 1950,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "oil_stock_status",
+      "input_type": "single_choice",
+      "row_id": "omar_5l",
+      "value": "Normal"
+    },
+    {
+      "question_id": "oil_price_photo",
+      "input_type": "photo",
+      "row_id": "omar_5l",
+      "media_ref": "media_003"
+    },
+    {
+      "question_id": "oil_shelf_visibility",
+      "input_type": "single_choice",
+      "value": "Good"
+    },
+    {
+      "question_id": "oil_shelf_photo",
+      "input_type": "photo",
+      "media_ref": "media_004"
+    },
+    {
+      "question_id": "oil_promotion_display",
+      "input_type": "single_choice",
+      "value": "No"
+    },
+    {
+      "question_id": "beer_rows",
+      "input_type": "repeat_table",
+      "value": [
+        {
+          "row_id": "dashen",
+          "brand": "Dashen",
+          "pack_size": "330ml bottle",
+          "available": true
+        },
+        {
+          "row_id": "heineken",
+          "brand": "Heineken",
+          "pack_size": "330ml bottle",
+          "available": true
+        }
+      ]
+    },
+    {
+      "question_id": "beer_brand",
+      "input_type": "single_choice",
+      "row_id": "dashen",
+      "value": "Dashen"
+    },
+    {
+      "question_id": "beer_sku",
+      "input_type": "text",
+      "row_id": "dashen",
+      "value": "330ml bottle"
+    },
+    {
+      "question_id": "beer_available",
+      "input_type": "single_choice",
+      "row_id": "dashen",
+      "value": "Yes"
+    },
+    {
+      "question_id": "beer_price",
+      "input_type": "numeric_price",
+      "row_id": "dashen",
+      "value": 62,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "beer_cold_availability",
+      "input_type": "single_choice",
+      "row_id": "dashen",
+      "value": "Cold"
+    },
+    {
+      "question_id": "beer_visibility",
+      "input_type": "single_choice",
+      "row_id": "dashen",
+      "value": "Fridge visible"
+    },
+    {
+      "question_id": "beer_photo",
+      "input_type": "photo",
+      "row_id": "dashen",
+      "media_ref": "media_005"
+    },
+    {
+      "question_id": "beer_brand",
+      "input_type": "single_choice",
+      "row_id": "heineken",
+      "value": "Heineken"
+    },
+    {
+      "question_id": "beer_sku",
+      "input_type": "text",
+      "row_id": "heineken",
+      "value": "330ml bottle"
+    },
+    {
+      "question_id": "beer_available",
+      "input_type": "single_choice",
+      "row_id": "heineken",
+      "value": "Yes"
+    },
+    {
+      "question_id": "beer_price",
+      "input_type": "numeric_price",
+      "row_id": "heineken",
+      "value": 95,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "beer_cold_availability",
+      "input_type": "single_choice",
+      "row_id": "heineken",
+      "value": "Cold"
+    },
+    {
+      "question_id": "beer_visibility",
+      "input_type": "single_choice",
+      "row_id": "heineken",
+      "value": "Fridge visible"
+    },
+    {
+      "question_id": "beer_photo",
+      "input_type": "photo",
+      "row_id": "heineken",
+      "media_ref": "media_006"
+    },
+    {
+      "question_id": "beer_competing_visible",
+      "input_type": "single_choice",
+      "value": "Yes"
+    },
+    {
+      "question_id": "beer_photo_not_allowed",
+      "input_type": "single_choice",
+      "value": "No"
+    },
+    {
+      "question_id": "confirm",
+      "input_type": "checkbox",
+      "value": true
+    }
+  ],
+  "media": [
+    {
+      "media_ref": "media_001",
+      "question_id": "oil_price_photo",
+      "row_id": "orkid_1l",
+      "media_type": "image",
+      "file_ref": "seed-products/oil-bottle-sunflower-1l.jpg",
+      "captured_at": "2026-07-24T10:10:00+03:00",
+      "gps_at_capture": {
+        "lat": 8.995,
+        "lng": 38.78999
+      }
+    },
+    {
+      "media_ref": "media_002",
+      "question_id": "oil_price_photo",
+      "row_id": "tena_3l",
+      "media_type": "image",
+      "file_ref": "seed-products/oil-bottle-plain-3l.jpg",
+      "captured_at": "2026-07-24T10:11:20+03:00",
+      "gps_at_capture": {
+        "lat": 8.99503,
+        "lng": 38.78998
+      }
+    },
+    {
+      "media_ref": "media_003",
+      "question_id": "oil_price_photo",
+      "row_id": "omar_5l",
+      "media_type": "image",
+      "file_ref": "seed-products/oil-bottle-5l.jpg",
+      "captured_at": "2026-07-24T10:12:40+03:00",
+      "gps_at_capture": {
+        "lat": 8.99498,
+        "lng": 38.79002
+      }
+    },
+    {
+      "media_ref": "media_004",
+      "question_id": "oil_shelf_photo",
+      "media_type": "image",
+      "file_ref": "seed-products/supermarket-shelf.jpg",
+      "captured_at": "2026-07-24T10:13:30+03:00",
+      "gps_at_capture": {
+        "lat": 8.99501,
+        "lng": 38.79001
+      }
+    },
+    {
+      "media_ref": "media_005",
+      "question_id": "beer_photo",
+      "row_id": "dashen",
+      "media_type": "image",
+      "file_ref": "seed-products/beer-bottle-330ml.jpg",
+      "captured_at": "2026-07-24T10:18:00+03:00",
+      "gps_at_capture": {
+        "lat": 8.99502,
+        "lng": 38.79002
+      }
+    },
+    {
+      "media_ref": "media_006",
+      "question_id": "beer_photo",
+      "row_id": "heineken",
+      "media_type": "image",
+      "file_ref": "seed-products/beer-bottle-castel.jpg",
+      "captured_at": "2026-07-24T10:19:10+03:00",
+      "gps_at_capture": {
+        "lat": 8.99503,
+        "lng": 38.79003
+      }
+    }
+  ],
+  "prices": [
+    {
+      "question_id": "oil_price",
+      "sku_id": "SKU-OIL-ORKID-1L",
+      "row_id": "orkid_1l",
+      "value": 430,
+      "currency": "ETB",
+      "unit": "per bottle"
+    },
+    {
+      "question_id": "oil_price",
+      "sku_id": "SKU-OIL-TENA-3L",
+      "row_id": "tena_3l",
+      "value": 1200,
+      "currency": "ETB",
+      "unit": "per bottle"
+    },
+    {
+      "question_id": "oil_price",
+      "sku_id": "SKU-OIL-OMAR-5L",
+      "row_id": "omar_5l",
+      "value": 1950,
+      "currency": "ETB",
+      "unit": "per bottle"
+    },
+    {
+      "question_id": "beer_price",
+      "sku_id": "SKU-BEER-DASHEN-330ML",
+      "row_id": "dashen",
+      "value": 62,
+      "currency": "ETB",
+      "unit": "per bottle"
+    },
+    {
+      "question_id": "beer_price",
+      "sku_id": "SKU-BEER-HEINEKEN-330ML",
+      "row_id": "heineken",
+      "value": 95,
+      "currency": "ETB",
+      "unit": "per bottle"
+    }
+  ],
+  "client_app_version": "2.5.0"
+}

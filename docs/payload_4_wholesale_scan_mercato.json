@@ -1,0 +1,344 @@
+{
+  "_scenario": "COMPLEX — Wholesale pricing: oil by the carton, teff by the quintal, onion by the sack, Mercato. Submission-level data is clean; same real-photo caveat as payload 2.",
+  "submission_id": "b1a1c004-4444-4a44-9a44-000000000004",
+  "quest_id": "QST-WHOLESALE-MERCATO-003",
+  "config_version": "QST-WHOLESALE-MERCATO-003_v1",
+  "agent_id": "AGT-30032",
+  "outlet_id": "OUT-MERCATO-WHOLESALE-003",
+  "timestamps": {
+    "survey_start_at": "2026-07-23T09:00:00+03:00",
+    "survey_end_at": "2026-07-23T09:31:50+03:00",
+    "submitted_at": "2026-07-23T09:32:10+03:00"
+  },
+  "gps": {
+    "lat": 9.03501,
+    "lng": 38.73999,
+    "accuracy_m": 5
+  },
+  "answers": [
+    {
+      "question_id": "branch_select",
+      "input_type": "dropdown",
+      "value": "OUT-MERCATO-WHOLESALE-003"
+    },
+    {
+      "question_id": "confirm_branch",
+      "input_type": "single_choice",
+      "value": "Yes"
+    },
+    {
+      "question_id": "oil_rows",
+      "input_type": "repeat_table",
+      "value": [
+        {
+          "row_id": "orkid_5l",
+          "brand": "Orkid",
+          "pack_size": "5L",
+          "available": true
+        },
+        {
+          "row_id": "omar_3l",
+          "brand": "Omar",
+          "pack_size": "3L",
+          "available": true
+        }
+      ]
+    },
+    {
+      "question_id": "oil_brand",
+      "input_type": "single_choice",
+      "row_id": "orkid_5l",
+      "value": "Orkid"
+    },
+    {
+      "question_id": "oil_pack_size",
+      "input_type": "single_choice",
+      "row_id": "orkid_5l",
+      "value": "5L"
+    },
+    {
+      "question_id": "oil_available",
+      "input_type": "single_choice",
+      "row_id": "orkid_5l",
+      "value": "Yes"
+    },
+    {
+      "question_id": "oil_price",
+      "input_type": "numeric_price",
+      "row_id": "orkid_5l",
+      "value": 1870,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "oil_stock_status",
+      "input_type": "single_choice",
+      "row_id": "orkid_5l",
+      "value": "Normal"
+    },
+    {
+      "question_id": "oil_price_photo",
+      "input_type": "photo",
+      "row_id": "orkid_5l",
+      "media_ref": "media_001"
+    },
+    {
+      "question_id": "oil_brand",
+      "input_type": "single_choice",
+      "row_id": "omar_3l",
+      "value": "Omar"
+    },
+    {
+      "question_id": "oil_pack_size",
+      "input_type": "single_choice",
+      "row_id": "omar_3l",
+      "value": "3L"
+    },
+    {
+      "question_id": "oil_available",
+      "input_type": "single_choice",
+      "row_id": "omar_3l",
+      "value": "Yes"
+    },
+    {
+      "question_id": "oil_price",
+      "input_type": "numeric_price",
+      "row_id": "omar_3l",
+      "value": 1140,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "oil_stock_status",
+      "input_type": "single_choice",
+      "row_id": "omar_3l",
+      "value": "Normal"
+    },
+    {
+      "question_id": "oil_price_photo",
+      "input_type": "photo",
+      "row_id": "omar_3l",
+      "media_ref": "media_002"
+    },
+    {
+      "question_id": "oil_shelf_visibility",
+      "input_type": "single_choice",
+      "value": "Good"
+    },
+    {
+      "question_id": "oil_shelf_photo",
+      "input_type": "photo",
+      "media_ref": "media_003"
+    },
+    {
+      "question_id": "teff_rows",
+      "input_type": "repeat_table",
+      "value": [
+        {
+          "row_id": "white_teff_bulk",
+          "pack_size": "White teff",
+          "available": true
+        }
+      ]
+    },
+    {
+      "question_id": "teff_variety",
+      "input_type": "single_choice",
+      "row_id": "white_teff_bulk",
+      "value": "White"
+    },
+    {
+      "question_id": "teff_available",
+      "input_type": "single_choice",
+      "row_id": "white_teff_bulk",
+      "value": "Yes"
+    },
+    {
+      "question_id": "teff_price",
+      "input_type": "numeric_price",
+      "row_id": "white_teff_bulk",
+      "value": 9200,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "teff_unit",
+      "input_type": "single_choice",
+      "row_id": "white_teff_bulk",
+      "value": "quintal"
+    },
+    {
+      "question_id": "teff_quality_grade",
+      "input_type": "single_choice",
+      "row_id": "white_teff_bulk",
+      "value": "Grade 1"
+    },
+    {
+      "question_id": "teff_price_type",
+      "input_type": "single_choice",
+      "value": "Wholesale"
+    },
+    {
+      "question_id": "teff_photo",
+      "input_type": "photo",
+      "row_id": "white_teff_bulk",
+      "media_ref": "media_004"
+    },
+    {
+      "question_id": "onion_rows",
+      "input_type": "repeat_table",
+      "value": [
+        {
+          "row_id": "local_onion_sack",
+          "pack_size": "Local red onion",
+          "available": true
+        }
+      ]
+    },
+    {
+      "question_id": "onion_origin",
+      "input_type": "single_choice",
+      "row_id": "local_onion_sack",
+      "value": "Local red onion"
+    },
+    {
+      "question_id": "onion_available",
+      "input_type": "single_choice",
+      "row_id": "local_onion_sack",
+      "value": "Yes"
+    },
+    {
+      "question_id": "onion_price",
+      "input_type": "numeric_price",
+      "row_id": "local_onion_sack",
+      "value": 4200,
+      "currency": "ETB"
+    },
+    {
+      "question_id": "onion_unit",
+      "input_type": "single_choice",
+      "row_id": "local_onion_sack",
+      "value": "sack"
+    },
+    {
+      "question_id": "onion_size_quality",
+      "input_type": "single_choice",
+      "row_id": "local_onion_sack",
+      "value": "Mixed"
+    },
+    {
+      "question_id": "onion_price_type",
+      "input_type": "single_choice",
+      "value": "Wholesale"
+    },
+    {
+      "question_id": "onion_photo",
+      "input_type": "photo",
+      "row_id": "local_onion_sack",
+      "media_ref": "media_005"
+    },
+    {
+      "question_id": "onion_trader_note",
+      "input_type": "text",
+      "value": "Supply is steady this week; price flat vs. last visit."
+    },
+    {
+      "question_id": "confirm",
+      "input_type": "checkbox",
+      "value": true
+    }
+  ],
+  "media": [
+    {
+      "media_ref": "media_001",
+      "question_id": "oil_price_photo",
+      "row_id": "orkid_5l",
+      "media_type": "image",
+      "file_ref": "seed-products/oil-bottle-sunflower-1l.jpg",
+      "captured_at": "2026-07-23T09:05:00+03:00",
+      "gps_at_capture": {
+        "lat": 9.03499,
+        "lng": 38.74002
+      }
+    },
+    {
+      "media_ref": "media_002",
+      "question_id": "oil_price_photo",
+      "row_id": "omar_3l",
+      "media_type": "image",
+      "file_ref": "seed-products/oil-bottle-5l.jpg",
+      "captured_at": "2026-07-23T09:07:40+03:00",
+      "gps_at_capture": {
+        "lat": 9.03497,
+        "lng": 38.74003
+      }
+    },
+    {
+      "media_ref": "media_003",
+      "question_id": "oil_shelf_photo",
+      "media_type": "image",
+      "file_ref": "seed-products/supermarket-shelf.jpg",
+      "captured_at": "2026-07-23T09:09:00+03:00",
+      "gps_at_capture": {
+        "lat": 9.035,
+        "lng": 38.73999
+      }
+    },
+    {
+      "media_ref": "media_004",
+      "question_id": "teff_photo",
+      "row_id": "white_teff_bulk",
+      "media_type": "image",
+      "file_ref": "seed-products/teff-flour-product.jpg",
+      "captured_at": "2026-07-23T09:16:00+03:00",
+      "gps_at_capture": {
+        "lat": 9.03502,
+        "lng": 38.74
+      }
+    },
+    {
+      "media_ref": "media_005",
+      "question_id": "onion_photo",
+      "row_id": "local_onion_sack",
+      "media_type": "image",
+      "file_ref": "seed-products/red-onion-store-display.jpg",
+      "captured_at": "2026-07-23T09:24:00+03:00",
+      "gps_at_capture": {
+        "lat": 9.03502,
+        "lng": 38.73998
+      }
+    }
+  ],
+  "prices": [
+    {
+      "question_id": "oil_price",
+      "sku_id": "SKU-OIL-ORKID-5L",
+      "row_id": "orkid_5l",
+      "value": 1870,
+      "currency": "ETB",
+      "unit": "per carton"
+    },
+    {
+      "question_id": "oil_price",
+      "sku_id": "SKU-OIL-OMAR-3L",
+      "row_id": "omar_3l",
+      "value": 1140,
+      "currency": "ETB",
+      "unit": "per carton"
+    },
+    {
+      "question_id": "teff_price",
+      "sku_id": "SKU-TEFF-WHITE-QUINTAL",
+      "row_id": "white_teff_bulk",
+      "value": 9200,
+      "currency": "ETB",
+      "unit": "per quintal"
+    },
+    {
+      "question_id": "onion_price",
+      "sku_id": "SKU-ONION-LOCAL-SACK",
+      "row_id": "local_onion_sack",
+      "value": 4200,
+      "currency": "ETB",
+      "unit": "per sack"
+    }
+  ],
+  "client_app_version": "2.5.0"
+}

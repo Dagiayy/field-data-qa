@@ -1,0 +1,214 @@
+{
+  "_note": "This is NOT part of the submission payload. This is the reference/baseline data that must already exist in the system (via the Outlet and OutletBaseline tables, seeded by backend/database/seeders/OutletSeeder.php) BEFORE the payload_*.json test payloads are processed, since the QA engine looks these up by outlet_id. Run `php artisan migrate:fresh --seed` to (re)create exactly this data, then run the payload files through the ingestion API. baseline_photo_path values are relative to backend/storage/app/public/ (real product/shelf photos downloaded once from Wikimedia Commons — see OutletSeeder's docblock for why these aren't hotlinked).",
+
+  "outlets": [
+    {
+      "id": "OUT-BOLE-SUPERMARKET-001",
+      "name": "Supermarket Chain A — Bole Branch",
+      "branch": "Bulbula / Mariam Mazoria, Bole",
+      "area": "Bole (Bulbula/Mariam Mazoria)",
+      "city": "Addis Ababa",
+      "outlet_type": "supermarket",
+      "gps_lat": 8.99500,
+      "gps_lng": 38.79000,
+      "gps_radius_m": 150,
+      "products_to_monitor": ["edible_oil", "beer"],
+      "baselines": [
+        {
+          "spot_label": "shelf",
+          "baseline_gps_lat": 8.99501,
+          "baseline_gps_lng": 38.79001,
+          "baseline_gps_radius_m": 25,
+          "baseline_photo_path": "seed-products/supermarket-shelf.jpg",
+          "notes": "Edible oil aisle, facing the beer cooler across the walkway."
+        },
+        {
+          "spot_label": "price_tag",
+          "baseline_gps_lat": 8.99500,
+          "baseline_gps_lng": 38.78999,
+          "baseline_gps_radius_m": 20,
+          "baseline_photo_path": "seed-products/oil-bottle-sunflower-1l.jpg",
+          "notes": "Close-up reference for edible oil price tags, 1L/3L/5L shelf strip."
+        }
+      ]
+    },
+    {
+      "id": "OUT-SHOLA-MARKET-002",
+      "name": "Shola Open Market — Grain & Produce Row",
+      "branch": "Shola",
+      "area": "Shola",
+      "city": "Addis Ababa",
+      "outlet_type": "open_market",
+      "gps_lat": 9.01000,
+      "gps_lng": 38.79800,
+      "gps_radius_m": 200,
+      "products_to_monitor": ["teff", "red_onion", "edible_oil"],
+      "baselines": [
+        {
+          "spot_label": "shelf",
+          "baseline_gps_lat": 9.01002,
+          "baseline_gps_lng": 38.79799,
+          "baseline_gps_radius_m": 30,
+          "baseline_photo_path": "seed-products/red-onion-pile-market.jpg",
+          "notes": "Open-air produce row — teff, red onion, and edible oil stalls side by side."
+        },
+        {
+          "spot_label": "price_tag",
+          "baseline_gps_lat": 9.00999,
+          "baseline_gps_lng": 38.79801,
+          "baseline_gps_radius_m": 20,
+          "baseline_photo_path": "seed-products/teff-flour-product.jpg",
+          "notes": "Teff sack/measuring-unit close-up reference."
+        }
+      ]
+    },
+    {
+      "id": "OUT-MERCATO-WHOLESALE-003",
+      "name": "Mercato Packaged Goods & Grain Section",
+      "branch": "Mercato",
+      "area": "Mercato",
+      "city": "Addis Ababa",
+      "outlet_type": "wholesale_market",
+      "gps_lat": 9.03500,
+      "gps_lng": 38.74000,
+      "gps_radius_m": 250,
+      "products_to_monitor": ["edible_oil", "teff", "red_onion"],
+      "baselines": [
+        {
+          "spot_label": "shelf",
+          "baseline_gps_lat": 9.03502,
+          "baseline_gps_lng": 38.73998,
+          "baseline_gps_radius_m": 35,
+          "baseline_photo_path": "seed-products/red-onion-store-display.jpg",
+          "notes": "Wholesale produce/grain display, bulk sacks and crates."
+        },
+        {
+          "spot_label": "price_tag",
+          "baseline_gps_lat": 9.03499,
+          "baseline_gps_lng": 38.74002,
+          "baseline_gps_radius_m": 20,
+          "baseline_photo_path": "seed-products/oil-bottle-sunflower-1l.jpg",
+          "notes": "Wholesale edible oil price-tag/carton close-up reference."
+        }
+      ]
+    },
+    {
+      "id": "OUT-SARIS-GROCERY-004",
+      "name": "Assigned Grocery & Nearby Fresh Vendor — Saris",
+      "branch": "Saris Addis Sefer",
+      "area": "Saris Addis Sefer",
+      "city": "Addis Ababa",
+      "outlet_type": "mini_market",
+      "gps_lat": 8.95500,
+      "gps_lng": 38.76500,
+      "gps_radius_m": 150,
+      "products_to_monitor": ["edible_oil", "beer", "red_onion"],
+      "baselines": [
+        {
+          "spot_label": "shelf",
+          "baseline_gps_lat": 8.95501,
+          "baseline_gps_lng": 38.76501,
+          "baseline_gps_radius_m": 25,
+          "baseline_photo_path": "seed-products/beer-bottles-shelf.jpg",
+          "notes": "Mini-market shelf/cooler — edible oil and beer."
+        },
+        {
+          "spot_label": "price_tag",
+          "baseline_gps_lat": 8.95499,
+          "baseline_gps_lng": 38.76499,
+          "baseline_gps_radius_m": 20,
+          "baseline_photo_path": "seed-products/oil-bottle-sunflower-1l.jpg",
+          "notes": "Price-tag close-up reference, mini-market counter."
+        }
+      ]
+    },
+    {
+      "id": "OUT-CMCAYAT-GROCERY-005",
+      "name": "Supermarket Chain B — CMC/Ayat Branch",
+      "branch": "CMC / Ayat",
+      "area": "CMC / Ayat",
+      "city": "Addis Ababa",
+      "outlet_type": "supermarket",
+      "gps_lat": 9.02500,
+      "gps_lng": 38.85000,
+      "gps_radius_m": 150,
+      "products_to_monitor": ["edible_oil", "beer"],
+      "baselines": [
+        {
+          "spot_label": "shelf",
+          "baseline_gps_lat": 9.02501,
+          "baseline_gps_lng": 38.85001,
+          "baseline_gps_radius_m": 25,
+          "baseline_photo_path": "seed-products/supermarket-shelf.jpg",
+          "notes": "Eastern Addis formal-retail shelf — edible oil and beer."
+        },
+        {
+          "spot_label": "price_tag",
+          "baseline_gps_lat": 9.02499,
+          "baseline_gps_lng": 38.84999,
+          "baseline_gps_radius_m": 20,
+          "baseline_photo_path": "seed-products/beer-bottle-330ml.jpg",
+          "notes": "330ml beer bottle price-tag close-up reference."
+        }
+      ]
+    },
+    {
+      "id": "OUT-KAZANCHIS-BEER-006",
+      "name": "Licensed Beer Outlet — Kazanchis",
+      "branch": "Kazanchis / Piassa",
+      "area": "Kazanchis",
+      "city": "Addis Ababa",
+      "outlet_type": "licensed_grocery",
+      "gps_lat": 9.01500,
+      "gps_lng": 38.76500,
+      "gps_radius_m": 100,
+      "products_to_monitor": ["beer"],
+      "baselines": [
+        {
+          "spot_label": "shelf",
+          "baseline_gps_lat": 9.01501,
+          "baseline_gps_lng": 38.76501,
+          "baseline_gps_radius_m": 20,
+          "baseline_photo_path": "seed-products/beer-bottles-shelf.jpg",
+          "notes": "Fridge/shelf beer display, licensed grocery/bar counter."
+        },
+        {
+          "spot_label": "price_tag",
+          "baseline_gps_lat": 9.01499,
+          "baseline_gps_lng": 38.76499,
+          "baseline_gps_radius_m": 15,
+          "baseline_photo_path": "seed-products/beer-bottle-330ml.jpg",
+          "notes": "330ml bottle close-up reference."
+        }
+      ]
+    }
+  ],
+
+  "how_each_payload_should_resolve": [
+    {
+      "payload": "payload_1_beer_scan_kazanchis.json",
+      "outlet_id": "OUT-KAZANCHIS-BEER-006",
+      "expected": "The single beer photo's gps_at_capture matches the 'price_tag' baseline point exactly and reuses that baseline's own photo file, so it resolves to (and visually matches) that spot. No hard flags expected — only the informational no_duration_baseline_configured flag (Quest Baseline Management hasn't been configured for this quest yet)."
+    },
+    {
+      "payload": "payload_2_supermarket_scan_bole.json",
+      "outlet_id": "OUT-BOLE-SUPERMARKET-001",
+      "expected": "3 edible-oil brand/pack rows (Orkid 1L, Tena 3L, Omar 5L) + 2 beer brand rows (Dashen, Heineken). The orkid_1l price photo and the overall shelf photo are each pinned to match one of this outlet's two baselines exactly; the other rows use genuinely distinct real photos, which may still soft-flag against the single static baseline photo on file — expected, realistic behavior, not a bug."
+    },
+    {
+      "payload": "payload_3_openmarket_scan_shola.json",
+      "outlet_id": "OUT-SHOLA-MARKET-002",
+      "expected": "2 teff varieties (White, Red) + red onion + edible oil. The white_teff photo and the onion photo are each pinned to match one of this outlet's two baselines exactly; red_teff/oil use distinct real photos."
+    },
+    {
+      "payload": "payload_4_wholesale_scan_mercato.json",
+      "outlet_id": "OUT-MERCATO-WHOLESALE-003",
+      "expected": "Wholesale pricing (oil by the carton, teff by the quintal, onion by the sack). The orkid_5l price photo and the onion sack photo are each pinned to match one of this outlet's two baselines exactly."
+    },
+    {
+      "payload": "payload_5_flagged_mixed_retail_saris.json",
+      "outlet_id": "OUT-SARIS-GROCERY-004",
+      "expected": "Deliberately suspicious: gps ~230m off the outlet's registered point (fails both geofence_check and possible_wrong_location against both baselines), oil price of 4,300 ETB against a payload-supplied market_range_price of 400-460 (price_range_outlier fail), a 14-second survey (timestamp_consistency: survey_too_fast) with 5m accuracy exceeding the 5m threshold (poor_gps_accuracy), and an onion photo captured 6 days before submission (timestamp_consistency: stale_photo)."
+    }
+  ]
+}
